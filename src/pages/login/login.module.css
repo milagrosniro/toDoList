@@ -1,0 +1,173 @@
+
+div.container {
+    background-image: url('../../../public/background.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+div.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.formLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 22rem;
+    min-height: 25vh;
+    background-color: #201240;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 1px 2px 55px 1px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 1px 2px 55px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 1px 2px 55px 1px rgba(0,0,0,0.58);
+}
+
+form.formLogin p {
+    color: white;
+    padding-top: 1rem;
+}
+
+div.logo {
+    /* background-image: url('https://gc-general.s3.amazonaws.com/gc-logo-white.svg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 13rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+div.logo_close {
+    background-image: url('https://gc-general.s3.amazonaws.com/gc-logo-white.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 8px;
+    margin-right: 0.5rem;
+    cursor:pointer;
+}
+
+div.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-top:1rem;
+   /*  justify-content: space-evenly; */
+    width: 90%;
+  /*   height: 90%; */
+    margin-bottom: 0.5rem;
+
+
+}
+
+div.inputContainer select option {
+    background: #712273;
+    border: none;
+}
+
+input.input {
+    background-color: transparent;
+    border: 2px solid gray;
+    padding: 1rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: 300ms;
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(128, 128, 128, 0.603);
+    font-weight: 500;
+}
+
+div.inputLogContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 300ms;
+    height: 2.5rem;
+    transition: 300ms;
+    overflow: hidden;
+    background-color: white;
+}
+
+div.inputLogContainer:focus-within {
+    border: 1px solid #2A26A6;
+}
+
+div.inputLogContainer input {
+    color: black;
+    background-color: transparent;
+    padding: 1rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+
+#pwLock {
+    cursor: pointer;
+}
+
+div.svgContainer {
+    background-color: #201240;
+    width: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button.submit {
+    background-color: #2A26A6;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 40%;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 400ms;
+}
+
+button.submit:hover {
+    background-color: #263aa6;
+}
+
+/* Menor a 320px */
+@media screen and (max-width: 420px) {
+
+    form.formLogin {
+        height: 54vh;
+    }
+
+}
+
+/* Menor a 1024px */
+@media screen and (max-width: 1024px) {
+   /*  form.formLogin {
+        height: 52vh;
+    } */
+}
+
